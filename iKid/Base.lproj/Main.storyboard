@@ -36,12 +36,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.44361460329786584" green="1" blue="0.78506105799700754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="iCw-UE-7Fe" firstAttribute="trailing" secondItem="Uav-JF-bDS" secondAttribute="trailing" id="2pU-9k-qFu"/>
-                            <constraint firstAttribute="trailing" secondItem="Uav-JF-bDS" secondAttribute="trailing" id="AHV-1N-2MN"/>
-                            <constraint firstItem="Uav-JF-bDS" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="DNH-wT-EGe"/>
+                            <constraint firstAttribute="trailing" secondItem="iCw-UE-7Fe" secondAttribute="trailing" id="DlF-gA-E9i"/>
+                            <constraint firstItem="Uav-JF-bDS" firstAttribute="trailing" secondItem="iCw-UE-7Fe" secondAttribute="trailing" id="Jjl-kQ-ZXf"/>
+                            <constraint firstItem="Uav-JF-bDS" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="255" id="UEv-jO-lVj"/>
                             <constraint firstItem="iCw-UE-7Fe" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="XEc-E9-mTw"/>
-                            <constraint firstItem="Uav-JF-bDS" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="255" id="ffu-Ga-64W"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Uav-JF-bDS" secondAttribute="bottom" constant="227" id="gad-M7-uvT"/>
+                            <constraint firstItem="Uav-JF-bDS" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="k5l-4b-ebq"/>
+                            <constraint firstItem="Uav-JF-bDS" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="y9H-Es-2Og"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Good Jokes" image="first" id="acW-dT-cKf"/>
@@ -72,8 +72,8 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXo-2n-ZaV">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="61" id="ZEd-XG-oOs"/>
-                                    <constraint firstAttribute="height" constant="48" id="zDP-2I-RDt"/>
+                                    <constraint firstAttribute="height" constant="48" id="LZj-JD-8tt"/>
+                                    <constraint firstAttribute="width" constant="61" id="SdS-bX-dFq"/>
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
@@ -83,12 +83,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.69609899305762579" blue="0.60634570334518911" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="cmW-tH-FhE" secondAttribute="trailing" id="IZZ-jz-7Bq"/>
-                            <constraint firstItem="cmW-tH-FhE" firstAttribute="top" secondItem="LmH-9h-Q4X" secondAttribute="bottom" constant="255" id="Y2d-zk-MTK"/>
-                            <constraint firstItem="cmW-tH-FhE" firstAttribute="leading" secondItem="ocA-Wm-BZW" secondAttribute="leading" id="dB4-SH-Gat"/>
-                            <constraint firstItem="hKi-aO-wgI" firstAttribute="top" secondItem="cmW-tH-FhE" secondAttribute="bottom" constant="227" id="nvh-R7-G8z"/>
-                            <constraint firstItem="JXo-2n-ZaV" firstAttribute="bottom" secondItem="hKi-aO-wgI" secondAttribute="top" id="q4r-F3-Vpw"/>
-                            <constraint firstItem="JXo-2n-ZaV" firstAttribute="trailing" secondItem="cmW-tH-FhE" secondAttribute="trailing" id="vO9-Yl-Kb3"/>
+                            <constraint firstItem="JXo-2n-ZaV" firstAttribute="bottom" secondItem="hKi-aO-wgI" secondAttribute="top" id="5o1-gB-mfu"/>
+                            <constraint firstItem="cmW-tH-FhE" firstAttribute="top" secondItem="LmH-9h-Q4X" secondAttribute="bottom" constant="255" id="8q5-4S-UMl"/>
+                            <constraint firstItem="cmW-tH-FhE" firstAttribute="trailing" secondItem="JXo-2n-ZaV" secondAttribute="trailing" id="Lt0-jG-mrb"/>
+                            <constraint firstAttribute="trailing" secondItem="cmW-tH-FhE" secondAttribute="trailing" id="cOd-2K-cX0"/>
+                            <constraint firstItem="cmW-tH-FhE" firstAttribute="centerY" secondItem="ocA-Wm-BZW" secondAttribute="centerY" id="f58-ZD-GqT"/>
+                            <constraint firstItem="cmW-tH-FhE" firstAttribute="leading" secondItem="ocA-Wm-BZW" secondAttribute="leading" id="yoV-CD-WhO"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dad Jokes" image="first" id="EIo-aj-tdK"/>
@@ -120,8 +120,8 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fw-vj-qHj">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="61" id="NXI-lk-rTI"/>
-                                    <constraint firstAttribute="height" constant="48" id="wyP-qV-7Tj"/>
+                                    <constraint firstAttribute="height" constant="48" id="AST-Dm-x1G"/>
+                                    <constraint firstAttribute="width" constant="61" id="jNd-s9-onm"/>
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
@@ -131,12 +131,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.9631834273567651" green="0.6809763541337186" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6fw-vj-qHj" firstAttribute="bottom" secondItem="Djb-ko-YwX" secondAttribute="top" id="4Uy-Rq-Vsn"/>
-                            <constraint firstAttribute="trailing" secondItem="lRi-1k-InR" secondAttribute="trailing" id="52K-wB-Ttk"/>
-                            <constraint firstItem="6fw-vj-qHj" firstAttribute="trailing" secondItem="lRi-1k-InR" secondAttribute="trailing" id="RVq-Fc-6Fn"/>
-                            <constraint firstItem="lRi-1k-InR" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="X5A-py-6SN"/>
-                            <constraint firstItem="lRi-1k-InR" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="255" id="q4m-S8-s5T"/>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="lRi-1k-InR" secondAttribute="bottom" constant="227" id="xUZ-dk-0s2"/>
+                            <constraint firstAttribute="trailing" secondItem="lRi-1k-InR" secondAttribute="trailing" id="30S-fA-can"/>
+                            <constraint firstItem="6fw-vj-qHj" firstAttribute="bottom" secondItem="Djb-ko-YwX" secondAttribute="top" id="3bV-Vd-H69"/>
+                            <constraint firstItem="lRi-1k-InR" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="JZz-Gc-T9X"/>
+                            <constraint firstItem="lRi-1k-InR" firstAttribute="trailing" secondItem="6fw-vj-qHj" secondAttribute="trailing" id="U3h-Ml-jDF"/>
+                            <constraint firstItem="lRi-1k-InR" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="255" id="eSO-x2-6b8"/>
+                            <constraint firstItem="lRi-1k-InR" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="keh-Zm-s3u"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pun Jokes" image="first" id="cPa-gy-q4n"/>
