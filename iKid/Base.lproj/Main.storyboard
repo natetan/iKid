@@ -56,7 +56,7 @@
         <!--Dad Jokes-->
         <scene sceneID="o0Y-uu-Kpy">
             <objects>
-                <viewController id="xdZ-wF-4Es" customClass="ThirdViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Third" id="xdZ-wF-4Es" customClass="ThirdViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LmH-9h-Q4X"/>
                         <viewControllerLayoutGuide type="bottom" id="hKi-aO-wgI"/>
@@ -76,6 +76,9 @@
                                     <constraint firstAttribute="height" constant="48" id="zDP-2I-RDt"/>
                                 </constraints>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="switchViews:" destination="xdZ-wF-4Es" eventType="touchUpInside" id="02r-Vf-5v4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.69609899305762579" blue="0.60634570334518911" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -98,7 +101,7 @@
         <!--Second Joke View Controller-->
         <scene sceneID="Zis-5u-sa2">
             <objects>
-                <viewController id="O31-AT-1w9" customClass="SecondJokeViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Second Joke" id="O31-AT-1w9" customClass="SecondJokeViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E4F-2G-kDH"/>
                         <viewControllerLayoutGuide type="bottom" id="E7V-Wn-VdF"/>
@@ -152,7 +155,7 @@
         <!--Third Joke View Controller-->
         <scene sceneID="qBc-pD-dxq">
             <objects>
-                <viewController id="8vZ-9E-2y5" customClass="ThirdJokeViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Third Joke" id="8vZ-9E-2y5" customClass="ThirdJokeViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fDd-iY-eef"/>
                         <viewControllerLayoutGuide type="bottom" id="rDm-3L-EUD"/>
@@ -199,6 +202,9 @@
                                     <constraint firstAttribute="height" constant="48" id="wyP-qV-7Tj"/>
                                 </constraints>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="switchViews:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="BQZ-hU-tXN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.9631834273567651" green="0.6809763541337186" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
