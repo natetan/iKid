@@ -9,6 +9,7 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    public var count = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +22,13 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func flip(_ sender: AnyObject) {
-        jokeLabel.text = "Iran"
+        if (count % 2 == 0) {
+            jokeLabel.text = "Iran"
+        } else {
+            jokeLabel.text = "While on a camping trip in Iraq, I was under fire. How did I escape?"
+        }
         UIView.transition(with: self.view, duration: 0.5, options: .transitionFlipFromLeft, animations: nil, completion: nil)
+        count = count + 1
     }
     
     @IBOutlet weak var jokeLabel: UILabel!

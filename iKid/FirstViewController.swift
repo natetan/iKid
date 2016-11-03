@@ -9,7 +9,7 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-    
+    public var count = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +22,13 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func flip(_ sender: AnyObject) {
-        jokeLabel.text = "Inheritance"
+        if (count % 2 == 0) {
+            jokeLabel.text = "Inheritance"
+        } else {
+            jokeLabel.text = "What is an object oriented way to get rich?"
+        }
         UIView.transition(with: self.view, duration: 0.5, options: .transitionFlipFromLeft, animations: nil, completion: nil)
+        count = count + 1
     }
     
     @IBOutlet weak var jokeLabel: UILabel!
