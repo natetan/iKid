@@ -25,7 +25,7 @@
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <action selector="switchViews:" destination="9pv-A4-QxB" eventType="touchUpInside" id="h60-Vl-vfP"/>
+                                    <action selector="flip:" destination="9pv-A4-QxB" eventType="touchUpInside" id="K34-JC-ed0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is an object oriented way to get rich?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uav-JF-bDS">
@@ -77,7 +77,7 @@
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <action selector="switchViews:" destination="xdZ-wF-4Es" eventType="touchUpInside" id="02r-Vf-5v4"/>
+                                    <action selector="flip:" destination="xdZ-wF-4Es" eventType="touchUpInside" id="xve-pI-nyl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -93,91 +93,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Dad Jokes" image="first" id="EIo-aj-tdK"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="jokeLabel" destination="cmW-tH-FhE" id="Ou8-oc-Zmw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eKO-MK-XuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1527" y="0.0"/>
-        </scene>
-        <!--Second Joke View Controller-->
-        <scene sceneID="Zis-5u-sa2">
-            <objects>
-                <viewController storyboardIdentifier="Second Joke" id="O31-AT-1w9" customClass="SecondJokeViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="E4F-2G-kDH"/>
-                        <viewControllerLayoutGuide type="bottom" id="E7V-Wn-VdF"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="pZL-gn-uRf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Iran" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9b-RC-dQq">
-                                <frame key="frameInset" minY="275" width="375" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vyi-8I-1zi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1526" y="661"/>
-        </scene>
-        <!--First Joke View Controller-->
-        <scene sceneID="xCw-9M-YRD">
-            <objects>
-                <viewController storyboardIdentifier="First Joke" id="iWu-75-GaU" customClass="FirstJokeViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ULn-KI-T26"/>
-                        <viewControllerLayoutGuide type="bottom" id="5GO-1s-XzK"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kFr-UC-8i1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inheritance" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZG-Tg-L8N">
-                                <frame key="frameInset" minY="275" width="375" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eN4-0J-Q3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1526" y="-656"/>
-        </scene>
-        <!--Third Joke View Controller-->
-        <scene sceneID="qBc-pD-dxq">
-            <objects>
-                <viewController storyboardIdentifier="Third Joke" id="8vZ-9E-2y5" customClass="ThirdJokeViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fDd-iY-eef"/>
-                        <viewControllerLayoutGuide type="bottom" id="rDm-3L-EUD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fVt-jc-81V">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="They don't serve food" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuO-0h-ScC">
-                                <frame key="frameInset" minX="-10" minY="275" width="396" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KQn-3O-bxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2254" y="0.0"/>
         </scene>
         <!--Pun Jokes-->
         <scene sceneID="wg7-f3-ORb">
@@ -203,7 +125,7 @@
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <action selector="switchViews:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="BQZ-hU-tXN"/>
+                                    <action selector="flip:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="XHj-op-O4U"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -218,6 +140,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pun Jokes" image="first" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="jokeLabel" destination="lRi-1k-InR" id="aKa-b4-iR9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

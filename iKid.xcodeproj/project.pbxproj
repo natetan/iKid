@@ -16,9 +16,6 @@
 		9D463BD91DCAC22A000B66D7 /* iKidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D463BD81DCAC22A000B66D7 /* iKidTests.swift */; };
 		9D463BE41DCAC22A000B66D7 /* iKidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D463BE31DCAC22A000B66D7 /* iKidUITests.swift */; };
 		9D463BF21DCAC72A000B66D7 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D463BF11DCAC72A000B66D7 /* ThirdViewController.swift */; };
-		9D463BF41DCAD452000B66D7 /* FirstJokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D463BF31DCAD452000B66D7 /* FirstJokeViewController.swift */; };
-		9D463BF61DCAE118000B66D7 /* SecondJokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D463BF51DCAE118000B66D7 /* SecondJokeViewController.swift */; };
-		9D463BF81DCAE128000B66D7 /* ThirdJokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D463BF71DCAE128000B66D7 /* ThirdJokeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +51,6 @@
 		9D463BE31DCAC22A000B66D7 /* iKidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iKidUITests.swift; sourceTree = "<group>"; };
 		9D463BE51DCAC22A000B66D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D463BF11DCAC72A000B66D7 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		9D463BF31DCAD452000B66D7 /* FirstJokeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstJokeViewController.swift; sourceTree = "<group>"; };
-		9D463BF51DCAE118000B66D7 /* SecondJokeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondJokeViewController.swift; sourceTree = "<group>"; };
-		9D463BF71DCAE128000B66D7 /* ThirdJokeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdJokeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +103,8 @@
 			children = (
 				9D463BC11DCAC22A000B66D7 /* AppDelegate.swift */,
 				9D463BC31DCAC22A000B66D7 /* FirstViewController.swift */,
-				9D463BF31DCAD452000B66D7 /* FirstJokeViewController.swift */,
 				9D463BC51DCAC22A000B66D7 /* SecondViewController.swift */,
-				9D463BF51DCAE118000B66D7 /* SecondJokeViewController.swift */,
 				9D463BF11DCAC72A000B66D7 /* ThirdViewController.swift */,
-				9D463BF71DCAE128000B66D7 /* ThirdJokeViewController.swift */,
 				9D463BC71DCAC22A000B66D7 /* Main.storyboard */,
 				9D463BCA1DCAC22A000B66D7 /* Assets.xcassets */,
 				9D463BCC1DCAC22A000B66D7 /* LaunchScreen.storyboard */,
@@ -274,11 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D463BF41DCAD452000B66D7 /* FirstJokeViewController.swift in Sources */,
-				9D463BF61DCAE118000B66D7 /* SecondJokeViewController.swift in Sources */,
 				9D463BC61DCAC22A000B66D7 /* SecondViewController.swift in Sources */,
 				9D463BC21DCAC22A000B66D7 /* AppDelegate.swift in Sources */,
-				9D463BF81DCAE128000B66D7 /* ThirdJokeViewController.swift in Sources */,
 				9D463BF21DCAC72A000B66D7 /* ThirdViewController.swift in Sources */,
 				9D463BC41DCAC22A000B66D7 /* FirstViewController.swift in Sources */,
 			);
