@@ -2,7 +2,7 @@
 //  FirstViewController.swift
 //  iKid
 //
-//  Created by iGuest on 11/2/16.
+//  Created by Yulong Tan on 11/2/16.
 //  Copyright © 2016 yulongproductions. All rights reserved.
 //
 
