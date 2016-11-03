@@ -9,7 +9,7 @@
         <!--Good Jokes-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="First" id="9pv-A4-QxB" customClass="FirstViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -18,17 +18,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is an object oriented way to get rich?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uav-JF-bDS">
-                                <frame key="frameInset" minY="275" width="375" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCw-UE-7Fe">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="nFW-OP-tyX"/>
+                                    <constraint firstAttribute="width" constant="61" id="zX1-xE-j1A"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="switchViews:" destination="9pv-A4-QxB" eventType="touchUpInside" id="h60-Vl-vfP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is an object oriented way to get rich?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uav-JF-bDS">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.44361460329786584" green="1" blue="0.78506105799700754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iCw-UE-7Fe" firstAttribute="trailing" secondItem="Uav-JF-bDS" secondAttribute="trailing" id="2pU-9k-qFu"/>
+                            <constraint firstAttribute="trailing" secondItem="Uav-JF-bDS" secondAttribute="trailing" id="AHV-1N-2MN"/>
+                            <constraint firstItem="Uav-JF-bDS" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="DNH-wT-EGe"/>
+                            <constraint firstItem="iCw-UE-7Fe" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="XEc-E9-mTw"/>
+                            <constraint firstItem="Uav-JF-bDS" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="255" id="ffu-Ga-64W"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Uav-JF-bDS" secondAttribute="bottom" constant="227" id="gad-M7-uvT"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Good Jokes" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="jokeLabel" destination="Uav-JF-bDS" id="Xgy-8J-fXS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,7 +65,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is an object oriented way to get rich?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmW-tH-FhE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A ham sandwich walks into a bar and orders a beer, but the bartender refused. Why?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmW-tH-FhE">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXo-2n-ZaV">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="ZEd-XG-oOs"/>
+                                    <constraint firstAttribute="height" constant="48" id="zDP-2I-RDt"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.69609899305762579" blue="0.60634570334518911" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cmW-tH-FhE" secondAttribute="trailing" id="IZZ-jz-7Bq"/>
+                            <constraint firstItem="cmW-tH-FhE" firstAttribute="top" secondItem="LmH-9h-Q4X" secondAttribute="bottom" constant="255" id="Y2d-zk-MTK"/>
+                            <constraint firstItem="cmW-tH-FhE" firstAttribute="leading" secondItem="ocA-Wm-BZW" secondAttribute="leading" id="dB4-SH-Gat"/>
+                            <constraint firstItem="hKi-aO-wgI" firstAttribute="top" secondItem="cmW-tH-FhE" secondAttribute="bottom" constant="227" id="nvh-R7-G8z"/>
+                            <constraint firstItem="JXo-2n-ZaV" firstAttribute="bottom" secondItem="hKi-aO-wgI" secondAttribute="top" id="q4r-F3-Vpw"/>
+                            <constraint firstItem="JXo-2n-ZaV" firstAttribute="trailing" secondItem="cmW-tH-FhE" secondAttribute="trailing" id="vO9-Yl-Kb3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dad Jokes" image="first" id="EIo-aj-tdK"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eKO-MK-XuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1527" y="0.0"/>
+        </scene>
+        <!--Second Joke View Controller-->
+        <scene sceneID="Zis-5u-sa2">
+            <objects>
+                <viewController id="O31-AT-1w9" customClass="SecondJokeViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E4F-2G-kDH"/>
+                        <viewControllerLayoutGuide type="bottom" id="E7V-Wn-VdF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pZL-gn-uRf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Iran" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9b-RC-dQq">
                                 <frame key="frameInset" minY="275" width="375" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -56,17 +117,69 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dad Jokes" image="first" id="EIo-aj-tdK"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eKO-MK-XuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vyi-8I-1zi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1527" y="0.0"/>
+            <point key="canvasLocation" x="1526" y="661"/>
+        </scene>
+        <!--First Joke View Controller-->
+        <scene sceneID="xCw-9M-YRD">
+            <objects>
+                <viewController storyboardIdentifier="First Joke" id="iWu-75-GaU" customClass="FirstJokeViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ULn-KI-T26"/>
+                        <viewControllerLayoutGuide type="bottom" id="5GO-1s-XzK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kFr-UC-8i1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inheritance" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZG-Tg-L8N">
+                                <frame key="frameInset" minY="275" width="375" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eN4-0J-Q3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1526" y="-656"/>
+        </scene>
+        <!--Third Joke View Controller-->
+        <scene sceneID="qBc-pD-dxq">
+            <objects>
+                <viewController id="8vZ-9E-2y5" customClass="ThirdJokeViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fDd-iY-eef"/>
+                        <viewControllerLayoutGuide type="bottom" id="rDm-3L-EUD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fVt-jc-81V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="They don't serve food" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuO-0h-ScC">
+                                <frame key="frameInset" minX="-10" minY="275" width="396" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KQn-3O-bxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2254" y="0.0"/>
         </scene>
         <!--Pun Jokes-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Second" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -75,15 +188,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is an object oriented way to get rich?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRi-1k-InR">
-                                <frame key="frameInset" minY="275" width="375" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="While on a camping trip in Iraq, I was under fire. How did I escape?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRi-1k-InR">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fw-vj-qHj">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="NXI-lk-rTI"/>
+                                    <constraint firstAttribute="height" constant="48" id="wyP-qV-7Tj"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.9631834273567651" green="0.6809763541337186" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6fw-vj-qHj" firstAttribute="bottom" secondItem="Djb-ko-YwX" secondAttribute="top" id="4Uy-Rq-Vsn"/>
+                            <constraint firstAttribute="trailing" secondItem="lRi-1k-InR" secondAttribute="trailing" id="52K-wB-Ttk"/>
+                            <constraint firstItem="6fw-vj-qHj" firstAttribute="trailing" secondItem="lRi-1k-InR" secondAttribute="trailing" id="RVq-Fc-6Fn"/>
+                            <constraint firstItem="lRi-1k-InR" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="X5A-py-6SN"/>
+                            <constraint firstItem="lRi-1k-InR" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="255" id="q4m-S8-s5T"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="lRi-1k-InR" secondAttribute="bottom" constant="227" id="xUZ-dk-0s2"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pun Jokes" image="first" id="cPa-gy-q4n"/>
                 </viewController>
